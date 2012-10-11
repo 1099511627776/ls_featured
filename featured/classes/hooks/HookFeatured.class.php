@@ -12,13 +12,14 @@ class PluginFeatured_HookFeatured extends Hook {
 	public function displayTopics(){
 		$featured = Config::Get('plugin.featured.featured');
 		$aTopics = array();
-		foreach($featured as $fId){
-			$aTopics[] = $this->Topic_GetTopicById($fId);
+		if($featured) {
+			foreach($featured as $fId){
+				if($oTopic = $this->Topic_GetTopicById($fId)){
+					$aTopics[] = $oTopic;
+				}
+			}
 		}
 		$this->Viewer_Assign('aTopics',$aTopics);
-/*		print "<pre>";
-			print_r($aTopics);
-		print "</pre>";*/
 		$s = $this->Viewer_Fetch(Plugin::GetTemplatePath('featured').'featured.tpl');
         return $s;
 	}
