@@ -1,4 +1,3 @@
-{debug}
 {foreach from=$aTopics item=oTopic}
 <div class="topic-slider">
 <li class="topicshort news">
