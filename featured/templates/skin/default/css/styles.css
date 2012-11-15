@@ -1,0 +1,19 @@
+.featured {
+	padding-left:0px !important;
+	padding-right:0px !important;
+	margin-right:0px !important;
+}
+.featured .title {
+/*	padding-left:11px;
+	padding-right:11px;*/
+	line-height:110%;
+	text-align:justify;
+	font-size:20px !important; 
+	margin-top:5px; 
+	font-weight:normal !important;
+}
+
+/*.featured .info {
+	padding-left:11px;
+	padding-right:11px;
+}*/

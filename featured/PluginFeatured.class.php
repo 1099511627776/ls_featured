@@ -20,6 +20,7 @@ class PluginFeatured extends Plugin {
     }
     // Инициализация плагина
     public function Init() {
+        $this->Viewer_AppendStyle(Plugin::GetTemplatePath(__CLASS__)."/css/styles.css"); // Добавление своего CSS
     }
 }
 ?>
