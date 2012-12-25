@@ -6,10 +6,10 @@
 .featured .title {
 /*	padding-left:11px;
 	padding-right:11px;*/
-	line-height:110%;
-	text-align:justify;
+	line-height:95%;
+	text-align:left;
 	font-size:20px !important; 
-	margin-top:5px; 
+	margin-top:0px; 
 	font-weight:normal !important;
 }
 

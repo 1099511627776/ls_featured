@@ -4,7 +4,10 @@
  */
 
 $config = array();
-$config['featured'] = array(3,6,7,8,9);
-$config['pages'] = 3;
-#Config::Set('plugin.mainpreview.size_images_preview')
+$config['featured'] = array(); //array(1,3,4,6)
+$config['exclude'] = array(); //array(1,2,3,4)
+$config['pages'] = 5;
+$config['top_period'] = 7; //days
 return $config;
+
+?>
